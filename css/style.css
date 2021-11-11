@@ -689,6 +689,15 @@ body {
   margin-left: auto;
 }
 
+@media (max-width: 1024px) {
+  .workout__content-img {
+    display: none;
+  }
+  .footer-top__info {
+    max-width: 325px;
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 12px 0 76px;
