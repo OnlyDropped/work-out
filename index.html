@@ -14,33 +14,41 @@
     <title>workoutt</title>
   </head>
   <body>
+
     <header class="header">
       <div class="container">
         <div class="header-nav">
           <a class="logo" href="#">
             <img src="img/logo.svg" alt="header logo" />
           </a>
-          <ul class="header-nav__menu">
-            <li class="header-nav__menu-list header-nav__menu-list--active">
-              <a class="header-nav__menu-link" href="#"> EXERCICES </a>
-            </li>
-            <li class="header-nav__menu-list">
-              <a class="header-nav__menu-link" href="#"> COMMUNITY </a>
-            </li>
-            <li class="header-nav__menu-list">
-              <a class="header-nav__menu-link" href="#"> PRICING </a>
-            </li>
-            <li class="header-nav__menu-list">
-              <a class="header-nav__menu-link" href="#"> ABOUT US </a>
-            </li>
-          </ul>
-          <div class="header-nav__authorization">
-            <button class="header-nav__authorization-log-in">LOGIN</button>
-            <button class="header-nav__authorization-sign-in">SIGN IN</button>
+          <div class="header-nav__info header-nav--active">
+            <ul class="header-nav__menu">
+              <li class="header-nav__menu-list active">
+                <a class="header-nav__menu-link" href="#"> EXERCICES </a>
+              </li>
+              <li class="header-nav__menu-list">
+                <a class="header-nav__menu-link" href="#"> COMMUNITY </a>
+              </li>
+              <li class="header-nav__menu-list">
+                <a class="header-nav__menu-link" href="#"> PRICING </a>
+              </li>
+              <li class="header-nav__menu-list">
+                <a class="header-nav__menu-link" href="#"> ABOUT US </a>
+              </li>
+            </ul>
+            <div class="header-nav__authorization">
+              <button class="header-nav__authorization-log-in">LOGIN</button>
+              <button class="header-nav__authorization-sign-in">SIGN IN</button>
+            </div>
           </div>
+
+          <button class="header-nav__btn">
+            <img src="img/icon/HAMBURGUER.svg" alt="" />
+          </button>
         </div>
       </div>
     </header>
+    
     <section class="workout">
       <div class="container">
         <div class="workout__wrapper">
@@ -87,6 +95,7 @@
         </div>
       </div>
     </section>
+    
     <section class="training">
       <div class="container">
         <div class="training__info">
@@ -128,8 +137,10 @@
             </div>
           </div>
         </div>
+        <a class="training__item-btn" href="#">SEE MORE</a>
       </div>
     </section>
+    
     <section class="team">
       <div class="container">
         <h2 class="title team__title">Our team</h2>
@@ -185,6 +196,7 @@
         </div>
       </div>
     </section>
+
     <section class="discover">
       <div class="container">
         <div class="discover-box">
@@ -200,6 +212,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
@@ -234,7 +247,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer-top__item">
+          <div class="footer-top__box">
+                      <div class="footer-top__item">
             <h6 class="footer-top__item-title">info</h6>
             <ul class="footer-top__item-list">
               <li class="footer-top__item-item">
@@ -265,6 +279,7 @@
               </li>
             </ul>
           </div>
+          </div>
           <div class="footer-top__item">  
             <h6 class="footer-top__item-title">subscribe to our newsletter</h6>
             <form class="footer-top__form" action="#">
@@ -280,5 +295,8 @@
         </div>
       </div>
     </footer>
+          <!--  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

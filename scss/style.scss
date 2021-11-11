@@ -8,6 +8,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &__btn{
+    display: none;
+  }
+  &__info{
+    display: flex;
+  }
   &__menu {
     display: flex;
     margin-left: auto;
@@ -211,6 +217,9 @@
     border-radius: 5px;
     padding: 8px 15px 7px;
   }
+  &__item-btn{
+    display: none;
+  }
 }
 .team {
   padding-bottom: 150px;
@@ -328,6 +337,10 @@
   padding: 36px 0 15px;
   display: flex;
   justify-content: space-between;
+  &__box{
+    display: flex;
+    column-gap: 54px;
+  }
   &__info {
     max-width: 405px;
     .logo {

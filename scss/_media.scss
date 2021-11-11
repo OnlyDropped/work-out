@@ -1,0 +1,300 @@
+@media (max-width: 375px) {
+  .header {
+    padding: 12px 0 76px;
+  }
+  .header-nav {
+    .logo {
+      img {
+        width: 107px;
+        height: 55px;
+      }
+    }
+    &__info {
+      display: block;
+      position: absolute;
+      top: 4px;
+      right: 0px;
+      background: #59253e;
+      box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 20px 0px 0px 20px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 14px 19px 15px;
+      transform: translateX(-1000%);
+      transition: all 0.4s;
+    }
+    .active {
+      transform: translateX(0%);
+    }
+    &__menu {
+      display: contents;
+      display: block;
+      margin: 0 auto 63px;
+      text-align: center;
+    }
+    &__menu-list + .header-nav__menu-list {
+      margin-left: 0px;
+    }
+    &__menu-list {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:not(.nohover):hover {
+        border: none;
+      }
+    }
+    &__menu-list--active {
+      border-bottom: none;
+      &:not(.nohover):hover {
+        border: none;
+      }
+    }
+    &__menu-link {
+      font-size: 12px;
+      line-height: 18px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__authorization {
+      margin-left: 0px;
+    }
+    &__authorization-log-in,
+    &__authorization-sign-in {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &__btn {
+      display: block;
+      padding: 0px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+  .workout {
+    padding-bottom: 50px;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__info-title {
+      font-size: 26px;
+      line-height: 39px;
+      text-align: center;
+      letter-spacing: 0.215em;
+      margin-bottom: 9px;
+    }
+    &__info-span {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.215em;
+      text-transform: uppercase;
+    }
+    &__info-text {
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.36);
+      margin-bottom: 60px;
+    }
+    &__info-box {
+      justify-content: center;
+    }
+    &__info-link {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 19px;
+      padding: 11px;
+    }
+    &__info-link {
+      &:last-child {
+        display: none;
+      }
+    }
+    &__content {
+      margin-left: 0px;
+      order: -1;
+      padding-top: 0px;
+      margin-bottom: 50px;
+    }
+    &__content-img {
+      width: 100%;
+      height: 283px;
+      object-fit: cover;
+    }
+    .workout-content {
+      display: none;
+    }
+  }
+  .training {
+    padding-bottom: 50px;
+    &__info {
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+    .title {
+      font-size: 26px;
+      line-height: 39px;
+      &::before {
+        left: 0;
+        width: 100%;
+      }
+    }
+    &__info-link {
+      display: none;
+    }
+    &__inner {
+      flex-direction: column;
+    }
+    &__item-link {
+      transform: translateY(-35px);
+      margin-left: 5px;
+    }
+    &__item-info {
+      padding-top: 0;
+    }
+    &__item-text {
+      display: none;
+    }
+    &__item-more {
+      display: none;
+    }
+    &__item-btn {
+      display: block;
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: #ffffff;
+      background-color: $linkColor;
+      border-radius: 5px;
+      padding: 8px 15px 7px;
+      margin: 0 auto;
+      width: fit-content;
+    }
+  }
+  .team {
+    padding-bottom: 50px;
+    &__title {
+      text-align: center;
+      width: 133px;
+      margin: 0 auto 31px;
+    }
+    .title {
+      font-size: 26px;
+      line-height: 39px;
+      width: 134px;
+      &::before {
+        width: 100%;
+      }
+    }
+    &__inner {
+      flex-wrap: wrap;
+      row-gap: 38px;
+      column-gap: 10px;
+      justify-content: space-evenly;
+    }
+    &__card {
+      width: 44%;
+    }
+    &__card-img {
+      border-radius: 20px;
+      &:first-child {
+        object-position: center;
+      }
+    }
+    &__card-info {
+      padding: 0;
+      background-color: transparent;
+    }
+    &__card-title {
+      font-size: 18px;
+      line-height: 27px;
+      color: #e5e5e5;
+      text-align: center;
+    }
+    &__card-subtitle,
+    &__card-link,
+    &__card-text {
+      display: none;
+    }
+  }
+  .discover {
+    background-color: #332f3c;
+  }
+  .discover-box {
+    padding: 15px 0;
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: 0.215em;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 84px;
+    }
+    &__info {
+      column-gap: 15px;
+    }
+    &__info-view,
+    &__info-more {
+      font-size: 18px;
+      line-height: 27px;
+      padding: 13px 10px 12px;
+    }
+  }
+  .footer {
+    padding: 124px 0 20px;
+  }
+  .footer-top {
+    padding: 35px 0;
+    flex-direction: column;
+    align-items: center;
+    .logo {
+      margin: 0 auto 20px;
+      img {
+        width: 107px;
+        height: 55px;
+      }
+    }
+    &__info-text {
+      margin-bottom: 26px;
+    }
+    &__info-list {
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+    &__info {
+      text-align: center;
+    }
+    &__box {
+      margin-top: 20px;
+      order: 1;
+    }
+    &__form-btn {
+      margin: 0 auto;
+      display: block;
+    }
+    &__form-email{
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+  .footer-bottom {
+    padding-top: 20px;
+    flex-wrap: wrap;
+    &__title {
+      margin-left: 5px;
+      margin-right: auto;
+    }
+    &__link {
+      margin: 20px auto 0px;
+    }
+  }
+}
