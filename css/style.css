@@ -1263,6 +1263,7 @@ body {
     margin-bottom: 50px;
   }
   .workout__content-img {
+    display: block;
     width: 100%;
     height: 283px;
     -o-object-fit: cover;
@@ -1353,7 +1354,7 @@ body {
             justify-content: space-evenly;
   }
   .team__card {
-    width: 44%;
+    width: 100%;
   }
   .team__card-img {
     border-radius: 20px;
